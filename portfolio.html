@@ -1,0 +1,210 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+/*ad9d9d*/
+
+*{
+  box-sizing:border-box;
+}
+ 
+body{
+  background-color:#ffd5cd;
+  font-family: 'Lato', sans-serif;
+  margin:0;
+}
+nav{
+  background-color:#838383;
+  padding:5px;
+  display:flex;
+  justify-content: flex-end;
+  font-size:25px;
+  position:fixed;
+  top:0;
+  left: 0;
+  right:0;
+  z-index:100;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  margin-right:20px;
+  text-decoration:none;
+  padding:6px;
+}
+
+
+
+header{
+  height:100vh;
+  background-size:cover;
+  color:#fff;
+  align-items:center;
+  flex-wrap:wrap;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  background-position:center center;
+  background-image:url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
+  position:relative;
+}
+
+header::after{
+  content:"";
+  background-color:#000;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  opacity:0.8;
+}
+header *{
+  position:relative;
+  z-index: 1;
+}
+
+header h1{
+  font-size:60px;
+  margin-top:0;
+}
+
+header p{
+  font-size:30px;
+}
+
+.project-tile{
+  max-width:250px;
+  margin:10px;
+}
+
+.project-container{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap:wrap;
+  max-width:810px;
+  margin: 20px auto 0;
+}
+
+
+.project-tile img{
+  max-width:100%;
+}
+
+project-tile p{
+  font-size:20px;
+  margin-top:10px;
+}
+
+section{
+  text-align:center;
+  padding:40px;
+}
+.bg-contact{
+  background-color:#d9adad;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding:0;
+  margin:20px 0 0 0;
+}
+
+ul a{
+  color:#0f3460;
+  font-size:30px;
+  margin:0 15px;
+}
+
+footer{
+  background-color:#838383;
+  color:white;
+  text-align:center;
+}
+@media(max-width: 440px){
+  section{
+    padding:20px;
+}
+  header{
+    text-align:center;
+  }
+  
+}
+  
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <a href=#welcome-section>About</a>
+  <a href=#projects>Projects</a>
+  <a href=#contact>Contact</a>
+</nav>
+<header id="welcome-section">
+  <h1>Hello!</h1>
+  <p>My Name is Akshatha Appajigowda</p>
+  <p>and I'am a webdeveloper</p>
+</header>
+
+<section id="projects">
+  <h2>Project</h2>
+  <div class="project-container">
+    
+  <a href="https://codepen.io/akshathaappajigowda/full/xxVxXem" target="_blank" class="project-tile">
+    <img src="https://onlinejpgtools.com/images/examples-onlinejpgtools/steve-jobs.png" alt="image of Steve jobs">
+    <p>Tribute Page</p>
+  </a>
+    
+  <a href="https://codepen.io/akshathaappajigowda/full/QWNKpPd" target="_blank" class="project-tile">
+    <img src="https://i0.wp.com/themes.svn.wordpress.org/reviewers-landing-page/1.0.6/screenshot.png" alt="image of product landing page">
+    <p>Product landing page</p>
+  </a>
+    
+  <a href="https://codepen.io/akshathaappajigowda/full/LYNENGd" target="_blank" class="project-tile">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYp02s0SogMGMhOZeheUmPzfdjBb6ngX9evg&usqp=CAU" alt="image of survey form">
+    <p>Survey Form</p>
+  </a>
+    
+  <a href="https://codepen.io/akshathaappajigowda/full/JjXEQqY" target="_blank" class="project-tile">
+    <img src="https://assets.codepen.io/260521/internal/screenshots/pens/NdrKKL.default.png?fit=cover&format=auto&ha=false&height=720&quality=75&v=2&version=1558346499&width=1279" alt="Technical documentation page">
+    <p>Tecnical Documentation</p>
+  </a>
+    
+  <a href="https://codepen.io/akshathaappajigowda" target="_blank" class="project-tile">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQapFShV9QflnVgyo34br0jOV2HRZNavnhAKA&usqp=CAU" alt="loading page immage">
+    <p>Loading page</p>
+  </a>
+    
+  <a href="https://codepen.io/akshathaappajigowda" target="_blank" class="project-tile">
+    <img src="https://static.collectui.com/shots/2311064/calculator-large" alt="calculator image">
+    <p>Calculator</p>
+  </a>
+    
+    </div>
+</section>
+
+<section id="contact" class="bg-contact">
+  <h2>CONTACT ME</h2>
+  <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
+  <ul>
+    <li><a href="https://twitter.com/AAppajigowda" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://www.facebook.com/akshatha.gowda.9277" target="_blank"><i class="fab fa-facebook"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/akshatha-appajigowda-7b7306116/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    <li><a id="profile-link" href="https://github.com/Akshathaappajigowda" target="_blank"><i class="fab fa-github"></i></a></li>
+    <li><a href="https://codepen.io/akshathaappajigowda" target="_blank"><i class="fab fa-codepen"></i></a>
+      <li><a href="https://www.freecodecamp.org/fcc0bd14f76-72b6-493c-a115-69fb6c6d0bee" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+    </li>
+  </ul>
+</section>
+
+<footer>Created by Akshatha Appajigowda</footer>
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
